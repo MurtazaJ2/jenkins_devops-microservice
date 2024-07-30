@@ -8,7 +8,6 @@ pipeline {
 			}
 		}
 	}
-}
 	stage{
 		stage('test'){
 			steps{
@@ -16,7 +15,6 @@ pipeline {
 			}
 		}
 	}
-}
 	stage{
 		stage('integration test'){
 			steps{
