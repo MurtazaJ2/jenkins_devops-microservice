@@ -7,19 +7,19 @@ pipeline {
 				echo "build"
 			}
 		}
-	}
-	stage{
-		stage('test'){
-			steps{
-				echo "test"
+		stage{
+			stage('test'){
+				steps{
+					echo "test"
+				}
+			}
+		stage{
+			stage('integration test'){
+				steps{
+					echo "integration test"
+				}
 			}
 		}
 	}
-	stage{
-		stage('integration test'){
-			steps{
-				echo "integration test"
-			}
-		}
-	}
+}
 }
