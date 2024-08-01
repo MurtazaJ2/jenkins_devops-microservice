@@ -17,17 +17,17 @@ pipeline {
 				echo "integration test"
 			}
 		}
-	}
-} 
+	} 
 
-post {
-	always {
-		echo "I am awesome"
-	}
-	success {
-		echo "I run when you are successful"
-	}
-	failure {
-		echo "i don't run"
+	post {
+		always {
+			echo "I am awesome"
+		}
+		success {
+			echo "I run when you are successful"
+		}
+		failure {
+			echo "i don't run"
+		}
 	}
 }
